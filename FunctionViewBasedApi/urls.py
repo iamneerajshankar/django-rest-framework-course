@@ -19,5 +19,7 @@ from myApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user-info/post/', views.post_user_info, name='post-user-info'),
-    path('get_user_info/', views.get_user_info, name='get-user-information')
+    path('get_user_info/', views.get_user_info, name='get-user-information'),
+    path('user-info/partial-update/', views.partial_update_user_info, name='update-user-information-partially'),
+    path('user-info/delete/', views.delete_user_info, name='delete-user-info')
 ]
